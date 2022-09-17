@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Lo, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20cdb0d9fc.js" crossorigin="anonymous"></script>
+    <title>Facebook Login Page</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center" style="margin-top: 80px;">
+            <div class="col-lg-7 col-md-8 col-12">
+                <div class="face-center">
+                    <img src="facebook.svg" class="face-img" alt="logo">
+                <div class="pl-3">
+                    <h2 class="face-recent pb-0">Recent logins</h2>
+                    <h6 class="face-click pt-0">Click your picture or add an account.</h6>
+                </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-4">
+                        <a href="#" class="nav-link">
+                            <div class="card book-card" style="border-radius:10px;">
+                                <div class="card-body p-0">
+                                    <img src="aftab.jpg" class="img-fluid" alt="logo"
+                                        style="width:100%; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="py-1" style="color: #606770;">Aftab</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="nav-link">
+                            <div class="card book-card" style="border-radius:10px;">
+                                <div class="card-body p-0">
+                                    <img src="tuk.jpg" class="img-fluid" alt="logo"
+                                        style="width:100%; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="py-1" style="color: #606770;">Aayat</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="nav-link">
+                            <div class="card book-cards" style="border-radius:10px;">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <i class="fa-solid fa-circle-plus icon-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center py-1" style="border-top:none;">
+                                    <h5 style="font-size:16px;">Add Account</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-8 col-12">
+                <div class="card shadow-sm pb-4" style="border-radius: 10px; margin-top: 60px;">
+                    <div class="px-3">
+                        <input required="true" type="text" placeholder="Email address or phone number"
+                            class="form-control py-4 mt-3" id="username">
+                        <input type="password" placeholder="Password" class="form-control mt-3 py-4" id="password">
+                        <button class="btn btn-primary btn-block py-2 mt-3 face-btn" onclick="logIn()">Log In</button>
+                        <div class="text-center mt-3">
+                            <a href="#" style="font-size:14px;">Forgotten password?</a>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <button class="btn face-btns py-2 px-4"><a href="signup.html" class="nav-link text-white">Creat New Account</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function logIn() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            var emal1 = localStorage.getItem("emal1");
+            var pswad1 = localStorage.getItem("pswad1");
+
+            console.log(localStorage.getItem("aftab"))
+
+            if(username==emal1 && password==pswad1 ){
+                location.href="https://www.facebook.com/"
+            }
+            else{
+                    alert("username and password is incorrect")
+                }
+        }
+    </script>
+</body>
+
+
+</html>

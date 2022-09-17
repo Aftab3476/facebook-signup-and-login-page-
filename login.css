@@ -1,0 +1,78 @@
+.face-btn{
+    font-size:20px !important;
+    font-weight: 700 !important;
+}
+
+.face-btns{
+    background-color: #42b72a !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border-radius: 7px !important;
+}
+
+.face-img{
+    height: auto;
+    width: 200px;
+}
+
+.face-recent{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.face-click{
+    color:#606770;
+}
+
+.book-card:hover{
+    box-shadow: 0px 5px 12px -3px #888888;
+}
+
+.book-cards:hover{
+    box-shadow: 0px 5px 12px -3px #888888;
+}
+
+body{
+    background-color: #f0f2f5;
+}
+
+.icon-plus{
+   font-size: 40px;
+
+}
+
+.face-up{
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.face-it{
+    line-height: 10px;
+}
+
+.input1 {
+    background-color:#f5f6f7 !important;
+    border-radius: 5px !important;
+}
+
+.input2 {
+    background-color:#f5f6f7 !important;
+    border-radius: 10px !important;
+    text-align: center;
+}
+
+.face-date{
+    line-height: 0px;
+    font-size: 13px;
+}
+
+.btn-faces{
+    background-color: #42b72a !important;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width:992px) {
+    .face-center{
+        text-align: center !important;
+        justify-content: center !important;
+    }
+}
